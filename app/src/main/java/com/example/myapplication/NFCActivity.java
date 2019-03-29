@@ -41,7 +41,8 @@ public class NFCActivity extends AppCompatActivity {
         b=false;
         // creating pending intent:
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, new Intent(this, getClass()).addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP), 0);
-        // creating intent receiver for NFC events:
+        // creating intent receiver for NFC events
+        //creting 2nd intend
         IntentFilter filter = new IntentFilter();
         filter.addAction(NfcAdapter.ACTION_TAG_DISCOVERED);
         filter.addAction(NfcAdapter.ACTION_NDEF_DISCOVERED);
